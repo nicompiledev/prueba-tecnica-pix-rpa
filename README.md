@@ -90,7 +90,7 @@ Editar el archivo `Data/Config.xlsx` con los siguientes valores:
    🔗 [Enlace al formulario](https://form.jotform.com/250675791629066) *(click para acceder)*  
 
 ✔️ **Video demostrativo**  
-   ▶️ [Ver video en YouTube](https://youtu.be/2kKgpJtXBag)  
+   ▶️ [Ver video en YouTube](https://youtu.be/JoqTRKa-3ls)  *(link actualizado)*
 
 
 
