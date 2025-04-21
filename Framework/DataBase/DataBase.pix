@@ -6,15 +6,37 @@
   <Logic z:Id="i2" i:type="ExecutedStep">
     <Childs>
       <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>22ab56d5-af9d-4c7e-8d65-e7a3a47c0216</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Inicializando inserción de producto en la base de datos"</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Escriba un log de inicio de inserción de producto en la bd</Text>
+        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i5" i:type="ExecutedStep">
         <Childs>
-          <AbstractStep z:Id="i4" i:type="ExecutedStep">
+          <AbstractStep z:Id="i6" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i5" i:type="ExecutedStep">
+              <AbstractStep z:Id="i7" i:type="ExecutedStep">
                 <Childs />
                 <Id>f87c240f-4bc4-4f20-b80c-2926559ef833</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i6">
+                  <PropertyValue z:Id="i8">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Config["ServerAddress"].ToString()</_expression>
@@ -22,7 +44,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i7">
+                  <PropertyValue z:Id="i9">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>ServerAddress</_expression>
@@ -39,12 +61,12 @@
                 <Text>Definimos servidor para conexion bd</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i8" i:type="ExecutedStep">
+              <AbstractStep z:Id="i10" i:type="ExecutedStep">
                 <Childs />
                 <Id>c2400da2-79ae-45e3-b2ff-f2ed0a970228</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i9">
+                  <PropertyValue z:Id="i11">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Config["DatabaseName"].ToString()</_expression>
@@ -52,7 +74,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i10">
+                  <PropertyValue z:Id="i12">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>DatabaseName</_expression>
@@ -69,12 +91,12 @@
                 <Text>Definimos base de datos a trabajar</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i11" i:type="ExecutedStep">
+              <AbstractStep z:Id="i13" i:type="ExecutedStep">
                 <Childs />
                 <Id>be3495a3-68e4-413e-9f76-1eb59e5d9a1b</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i12">
+                  <PropertyValue z:Id="i14">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Config["UserName"].ToString()</_expression>
@@ -82,7 +104,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i13">
+                  <PropertyValue z:Id="i15">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>UserName</_expression>
@@ -99,12 +121,12 @@
                 <Text>Definimos usuario con acceso al servidor bd</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i14" i:type="ExecutedStep">
+              <AbstractStep z:Id="i16" i:type="ExecutedStep">
                 <Childs />
                 <Id>23d3ef96-dae0-41c4-af54-4f0dae36a4ba</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i15">
+                  <PropertyValue z:Id="i17">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Config["UserPassword"].ToString()</_expression>
@@ -112,7 +134,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i16">
+                  <PropertyValue z:Id="i18">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>UserPassword</_expression>
@@ -129,12 +151,12 @@
                 <Text>Definimos password del usuario con acceso al servidor bd</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i17" i:type="ExecutedStep">
+              <AbstractStep z:Id="i19" i:type="ExecutedStep">
                 <Childs />
                 <Id>8c1b2a75-4307-40f0-884a-26ca84b44bea</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i18">
+                  <PropertyValue z:Id="i20">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>@$"Server={ServerAddress};Database={DatabaseName}; UID={UserName};PWD={UserPassword}"</_expression>
@@ -142,7 +164,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i19">
+                  <PropertyValue z:Id="i21">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>CadenaConexion</_expression>
@@ -159,12 +181,12 @@
                 <Text>Definir cadena conexion bd</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i20" i:type="ExecutedStep">
+              <AbstractStep z:Id="i22" i:type="ExecutedStep">
                 <Childs />
                 <Id>63150bdf-eb03-42b3-b303-9bae8bea148a</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i21">
+                  <PropertyValue z:Id="i23">
                     <PropertyName>DataBaseConnectionString</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>@$"Server={ServerAddress};Database={DatabaseName}; UID={UserName};PWD={UserPassword}"</_expression>
@@ -172,7 +194,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i22">
+                  <PropertyValue z:Id="i24">
                     <PropertyName>DataBaseProvider</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>"Npgsql"</_expression>
@@ -180,7 +202,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i23">
+                  <PropertyValue z:Id="i25">
                     <PropertyName>OutSqlConnection</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>ConexionBD</_expression>
@@ -197,12 +219,12 @@
                 <Text></Text>
                 <_activityFullName>Activities.DataBaseSQL.CreateConnection</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i24" i:type="ExecutedStep">
+              <AbstractStep z:Id="i26" i:type="ExecutedStep">
                 <Childs />
                 <Id>f8967d9a-7e07-4c8e-aa42-b893f37d46ff</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i25">
+                  <PropertyValue z:Id="i27">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>ConexionBD</_expression>
@@ -210,7 +232,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i26">
+                  <PropertyValue z:Id="i28">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>OutConexionBD</_expression>
@@ -227,12 +249,12 @@
                 <Text>Exportamos conexion de la base de datos</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i27" i:type="ExecutedStep">
+              <AbstractStep z:Id="i29" i:type="ExecutedStep">
                 <Childs />
                 <Id>a21033fc-c3a3-4c5e-883c-4fab823573ef</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i28">
+                  <PropertyValue z:Id="i30">
                     <PropertyName>Count</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>3</_expression>
@@ -249,12 +271,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i29" i:type="ExecutedStep">
+              <AbstractStep z:Id="i31" i:type="ExecutedStep">
                 <Childs />
                 <Id>8749f175-1f6b-4b26-a5b1-58c0ce1923b0</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i30">
+                  <PropertyValue z:Id="i32">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>int.Parse(Producto["id"].ToString())</_expression>
@@ -262,7 +284,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i31">
+                  <PropertyValue z:Id="i33">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>IdProducto</_expression>
@@ -279,12 +301,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i32" i:type="ExecutedStep">
+              <AbstractStep z:Id="i34" i:type="ExecutedStep">
                 <Childs />
                 <Id>d2572d7a-21ff-4919-9b8c-1213997d76a6</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i33">
+                  <PropertyValue z:Id="i35">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Producto["id"].ToString()</_expression>
@@ -292,7 +314,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i34">
+                  <PropertyValue z:Id="i36">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>IdProducto</_expression>
@@ -309,12 +331,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i35" i:type="ExecutedStep">
+              <AbstractStep z:Id="i37" i:type="ExecutedStep">
                 <Childs />
                 <Id>994430a8-e848-4e50-a750-7f3198b8a8dc</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i36">
+                  <PropertyValue z:Id="i38">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Producto["title"].ToString()</_expression>
@@ -322,7 +344,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i37">
+                  <PropertyValue z:Id="i39">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Titulo</_expression>
@@ -339,12 +361,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i38" i:type="ExecutedStep">
+              <AbstractStep z:Id="i40" i:type="ExecutedStep">
                 <Childs />
                 <Id>5e6ce783-03d9-4373-b96c-4ce99bce91e0</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i39">
+                  <PropertyValue z:Id="i41">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>decimal.Parse(Producto["price"].ToString(), System.Globalization.CultureInfo.InvariantCulture);</_expression>
@@ -352,7 +374,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i40">
+                  <PropertyValue z:Id="i42">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Precio</_expression>
@@ -369,12 +391,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i41" i:type="ExecutedStep">
+              <AbstractStep z:Id="i43" i:type="ExecutedStep">
                 <Childs />
                 <Id>b79038fd-f0d8-4770-8a0a-81d136d35568</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i42">
+                  <PropertyValue z:Id="i44">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Convert.ToDouble(Producto["price"]);
@@ -383,7 +405,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i43">
+                  <PropertyValue z:Id="i45">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Precio</_expression>
@@ -400,12 +422,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i44" i:type="ExecutedStep">
+              <AbstractStep z:Id="i46" i:type="ExecutedStep">
                 <Childs />
                 <Id>fe0fde18-f7dc-4a99-ab41-5cf9a5ff57f0</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i45">
+                  <PropertyValue z:Id="i47">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Producto["category"].ToString()</_expression>
@@ -413,7 +435,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i46">
+                  <PropertyValue z:Id="i48">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Categoria</_expression>
@@ -430,12 +452,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i47" i:type="ExecutedStep">
+              <AbstractStep z:Id="i49" i:type="ExecutedStep">
                 <Childs />
                 <Id>c15f5956-4a59-41ab-aab3-46b0c55c62c9</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i48">
+                  <PropertyValue z:Id="i50">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Producto["description"].ToString()</_expression>
@@ -443,7 +465,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i49">
+                  <PropertyValue z:Id="i51">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Descripcion</_expression>
@@ -460,12 +482,12 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i50" i:type="ExecutedStep">
+              <AbstractStep z:Id="i52" i:type="ExecutedStep">
                 <Childs />
                 <Id>9e9413c2-607c-46d1-b306-b0d5ed9b1680</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i51">
+                  <PropertyValue z:Id="i53">
                     <PropertyName>Count</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>3</_expression>
@@ -482,12 +504,21 @@
                 <Text></Text>
                 <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i52" i:type="ExecutedStep">
+              <AbstractStep z:Id="i54" i:type="CommentStep">
+                <Childs />
+                <Id>02ca3ebd-fce9-482d-985a-fe0112b067e4</Id>
+                <Parent z:Ref="i6" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <IsCollapsed>false</IsCollapsed>
+                <Text>// En el comando de inserción se definió lógica para omitir la inserción de productos ya existentes en la bd.</Text>
+              </AbstractStep>
+              <AbstractStep z:Id="i55" i:type="ExecutedStep">
                 <Childs />
                 <Id>79c1202b-f6b2-42b1-96ed-44139fd21a4f</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i53">
+                  <PropertyValue z:Id="i56">
                     <PropertyName>AffectedRecords</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>RegistrosModificados</_expression>
@@ -495,7 +526,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i54">
+                  <PropertyValue z:Id="i57">
                     <PropertyName>InSqlConnection</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>ConexionBD</_expression>
@@ -503,7 +534,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i55">
+                  <PropertyValue z:Id="i58">
                     <PropertyName>SqlQuery</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>@"INSERT INTO ""productos""
@@ -514,7 +545,7 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i56">
+                  <PropertyValue z:Id="i59">
                     <PropertyName>Timeout</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>3</_expression>
@@ -522,33 +553,33 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i57">
+                  <PropertyValue z:Id="i60">
                     <PropertyName>Params</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
                     <_screenShotBase64 i:nil="true" />
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem">
-                      <d11p1:ArgumentItem z:Id="i58">
+                      <d11p1:ArgumentItem z:Id="i61">
                         <d11p1:ArgumentName>id_producto</d11p1:ArgumentName>
                         <d11p1:Expression>IdProducto</d11p1:Expression>
                         <d11p1:Type i:nil="true" />
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i59">
+                      <d11p1:ArgumentItem z:Id="i62">
                         <d11p1:ArgumentName>title</d11p1:ArgumentName>
                         <d11p1:Expression>Titulo</d11p1:Expression>
                         <d11p1:Type i:nil="true" />
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i60">
+                      <d11p1:ArgumentItem z:Id="i63">
                         <d11p1:ArgumentName>price</d11p1:ArgumentName>
                         <d11p1:Expression>Precio</d11p1:Expression>
                         <d11p1:Type i:nil="true" />
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i61">
+                      <d11p1:ArgumentItem z:Id="i64">
                         <d11p1:ArgumentName>category</d11p1:ArgumentName>
                         <d11p1:Expression>Categoria</d11p1:Expression>
                         <d11p1:Type i:nil="true" />
                       </d11p1:ArgumentItem>
-                      <d11p1:ArgumentItem z:Id="i62">
+                      <d11p1:ArgumentItem z:Id="i65">
                         <d11p1:ArgumentName>description</d11p1:ArgumentName>
                         <d11p1:Expression>Descripcion</d11p1:Expression>
                         <d11p1:Type i:nil="true" />
@@ -562,19 +593,19 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
-                <Text>Ejecutar comando de inserción</Text>
+                <Text>Ejecutar comando de inserción (omitiendo productos existentes)</Text>
                 <_activityFullName>Activities.DataBaseSQL.SqlExecuteNonQuery</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i63" i:type="ExecutedStep">
+              <AbstractStep z:Id="i66" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i64" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i67" i:type="ExecutedStep">
                     <Childs>
-                      <AbstractStep z:Id="i65" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i68" i:type="ExecutedStep">
                         <Childs />
                         <Id>bad68756-ec03-4c44-826c-334a6ec3b2b2</Id>
-                        <Parent z:Ref="i64" />
+                        <Parent z:Ref="i67" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i66">
+                          <PropertyValue z:Id="i69">
                             <PropertyName>Text</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>$"Se registró exitosamente el producto: {Titulo} (ID de producto: {IdProducto}).";</_expression>
@@ -591,12 +622,12 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                         <Text></Text>
                         <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i67" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i70" i:type="ExecutedStep">
                         <Childs />
                         <Id>aa767fb0-0ae0-44e7-a77c-95f2118352bb</Id>
-                        <Parent z:Ref="i64" />
+                        <Parent z:Ref="i67" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i68">
+                          <PropertyValue z:Id="i71">
                             <PropertyName>Text</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>$"Se registró exitosamente el producto: {Titulo} (ID de producto: {IdProducto}).";</_expression>
@@ -604,10 +635,10 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i69">
+                          <PropertyValue z:Id="i72">
                             <PropertyName>Timeout</PropertyName>
                             <_dataType>Expression</_dataType>
-                            <_expression>5</_expression>
+                            <_expression>1</_expression>
                             <_screenShotBase64 i:nil="true" />
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -615,18 +646,18 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
-                        <EnableStatus>false</EnableStatus>
+                        <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
-                        <Text></Text>
+                        <Text>Ventana de mensajes de inserción de producto exitosa</Text>
                         <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i70" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i73" i:type="ExecutedStep">
                         <Childs />
                         <Id>a91d5c9b-9154-44bf-9b66-25599c7d2360</Id>
-                        <Parent z:Ref="i64" />
+                        <Parent z:Ref="i67" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i71">
+                          <PropertyValue z:Id="i74">
                             <PropertyName>Count</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>3</_expression>
@@ -645,7 +676,7 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                       </AbstractStep>
                     </Childs>
                     <Id>8ea02cbf-3624-4b1b-ba47-ffe8b84c0f3f</Id>
-                    <Parent z:Ref="i63" />
+                    <Parent z:Ref="i66" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
@@ -655,14 +686,14 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                     <Text></Text>
                     <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i72" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i75" i:type="ExecutedStep">
                     <Childs>
-                      <AbstractStep z:Id="i73" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i76" i:type="ExecutedStep">
                         <Childs />
                         <Id>76da53dc-fae2-42d0-9845-0a5be4c2c662</Id>
-                        <Parent z:Ref="i72" />
+                        <Parent z:Ref="i75" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i74">
+                          <PropertyValue z:Id="i77">
                             <PropertyName>Result</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>ProductoExistente</_expression>
@@ -670,7 +701,7 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i75">
+                          <PropertyValue z:Id="i78">
                             <PropertyName>InSqlConnection</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>ConexionBD</_expression>
@@ -678,7 +709,7 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i76">
+                          <PropertyValue z:Id="i79">
                             <PropertyName>SqlQuery</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>@"SELECT * 
@@ -688,7 +719,7 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i77">
+                          <PropertyValue z:Id="i80">
                             <PropertyName>Timeout</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>3</_expression>
@@ -696,13 +727,13 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i78">
+                          <PropertyValue z:Id="i81">
                             <PropertyName>Params</PropertyName>
                             <_dataType>Value</_dataType>
                             <_expression i:nil="true" />
                             <_screenShotBase64 i:nil="true" />
                             <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d15p1:ArrayOfArgumentItem">
-                              <d15p1:ArgumentItem z:Id="i79">
+                              <d15p1:ArgumentItem z:Id="i82">
                                 <d15p1:ArgumentName>id_producto</d15p1:ArgumentName>
                                 <d15p1:Expression>IdProducto</d15p1:Expression>
                                 <d15p1:Type i:nil="true" />
@@ -719,50 +750,12 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                         <Text>Consultar id del producto ya existente</Text>
                         <_activityFullName>Activities.DataBaseSQL.SqlExecuteQuery</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i80" i:type="ExecutedStep">
-                        <Childs />
-                        <Id>75d6855c-af33-4809-862d-e5463b8d70a6</Id>
-                        <Parent z:Ref="i72" />
-                        <PropertyValues>
-                          <PropertyValue z:Id="i81">
-                            <PropertyName>Separator</PropertyName>
-                            <_dataType>Value</_dataType>
-                            <_expression i:nil="true" />
-                            <_screenShotBase64 i:nil="true" />
-                            <_value xmlns:d15p1="http://schemas.datacontract.org/2004/07/Activities.BaseCollections.DataTable.Logic.Enums" i:type="d15p1:TypeSeparator">Comma</_value>
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                          <PropertyValue z:Id="i82">
-                            <PropertyName>Output</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>ProductoFila</_expression>
-                            <_screenShotBase64 i:nil="true" />
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                          <PropertyValue z:Id="i83">
-                            <PropertyName>BaseDataTable</PropertyName>
-                            <_dataType>Expression</_dataType>
-                            <_expression>ProductoExistente</_expression>
-                            <_screenShotBase64 i:nil="true" />
-                            <_value i:nil="true" />
-                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                          </PropertyValue>
-                        </PropertyValues>
-                        <SelectedOptionId>0</SelectedOptionId>
-                        <AutoCloseMode>None</AutoCloseMode>
-                        <EnableStatus>false</EnableStatus>
-                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                        <RetryCount>-1</RetryCount>
-                        <Text></Text>
-                        <_activityFullName>Activities.BaseCollections.DT.OutputDataTable</_activityFullName>
-                      </AbstractStep>
-                      <AbstractStep z:Id="i84" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i83" i:type="ExecutedStep">
                         <Childs />
                         <Id>0fb4e3bd-e9b8-4f17-aa31-d3b2dbed62a4</Id>
-                        <Parent z:Ref="i72" />
+                        <Parent z:Ref="i75" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i85">
+                          <PropertyValue z:Id="i84">
                             <PropertyName>Text</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>$"Producto duplicado: {ProductoExistente.Rows[0]["title"]} (ID de producto: {ProductoExistente.Rows[0]["id_producto"]}) ya existe en la base de datos."</_expression>
@@ -770,7 +763,7 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i86">
+                          <PropertyValue z:Id="i85">
                             <PropertyName>Level</PropertyName>
                             <_dataType>Value</_dataType>
                             <_expression i:nil="true" />
@@ -784,15 +777,15 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                         <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
-                        <Text></Text>
+                        <Text>Escribir un log de producto ya existente</Text>
                         <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i87" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i86" i:type="ExecutedStep">
                         <Childs />
                         <Id>ec26ebac-1951-49eb-9ca4-bb025f00d6e9</Id>
-                        <Parent z:Ref="i72" />
+                        <Parent z:Ref="i75" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i88">
+                          <PropertyValue z:Id="i87">
                             <PropertyName>Text</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>$"Producto duplicado: {ProductoExistente.Rows[0]["title"]} (ID de producto: {ProductoExistente.Rows[0]["id_producto"]}) ya existe en la base de datos."</_expression>
@@ -800,7 +793,7 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i89">
+                          <PropertyValue z:Id="i88">
                             <PropertyName>Timeout</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>5</_expression>
@@ -808,19 +801,27 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
+                          <PropertyValue z:Id="i89">
+                            <PropertyName>Title</PropertyName>
+                            <_dataType>Expression</_dataType>
+                            <_expression>"Producto existente:"</_expression>
+                            <_screenShotBase64 i:nil="true" />
+                            <_value i:nil="true" />
+                            <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                          </PropertyValue>
                         </PropertyValues>
                         <SelectedOptionId i:nil="true" />
                         <AutoCloseMode>None</AutoCloseMode>
-                        <EnableStatus>false</EnableStatus>
+                        <EnableStatus>true</EnableStatus>
                         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                         <RetryCount>-1</RetryCount>
-                        <Text></Text>
+                        <Text>Ventana de mensaje de producto ya existente</Text>
                         <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
                       </AbstractStep>
                       <AbstractStep z:Id="i90" i:type="ExecutedStep">
                         <Childs />
                         <Id>9922beca-db37-4596-a3f3-3a416c10db67</Id>
-                        <Parent z:Ref="i72" />
+                        <Parent z:Ref="i75" />
                         <PropertyValues>
                           <PropertyValue z:Id="i91">
                             <PropertyName>Count</PropertyName>
@@ -841,7 +842,7 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                       </AbstractStep>
                     </Childs>
                     <Id>4222eca0-b6a9-4744-8ead-a6790705e1a6</Id>
-                    <Parent z:Ref="i63" />
+                    <Parent z:Ref="i66" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
@@ -853,7 +854,7 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                   </AbstractStep>
                 </Childs>
                 <Id>28281bc9-1ae2-4378-8ce5-e041764281cb</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
                   <PropertyValue z:Id="i92">
                     <PropertyName>Condition</PropertyName>
@@ -874,7 +875,7 @@ WHERE ""id_producto"" = :id_producto"</_expression>
               </AbstractStep>
             </Childs>
             <Id>48256f3b-00d4-41cb-96f1-bd4c783383a8</Id>
-            <Parent z:Ref="i3" />
+            <Parent z:Ref="i5" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
@@ -916,11 +917,33 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                 <Text>Escribir un log de error</Text>
                 <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
               </AbstractStep>
+              <AbstractStep z:Id="i97" i:type="ExecutedStep">
+                <Childs />
+                <Id>b131cb1e-81fa-4326-85b4-06310bce0530</Id>
+                <Parent z:Ref="i93" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i98">
+                    <PropertyName>Exception</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>new System.Exception($"Error: {ErrorMensaje}, Exepcion: {ErrorExcepcion}.")</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId>1</SelectedOptionId>
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text></Text>
+                <_activityFullName>BR.Core.Base.ThrowException</_activityFullName>
+              </AbstractStep>
             </Childs>
             <Id>9979a3b4-48fe-4c3d-a947-55694c9ecffa</Id>
-            <Parent z:Ref="i3" />
+            <Parent z:Ref="i5" />
             <PropertyValues>
-              <PropertyValue z:Id="i97">
+              <PropertyValue z:Id="i99">
                 <PropertyName>Message</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>ErrorMensaje</_expression>
@@ -928,7 +951,7 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i98">
+              <PropertyValue z:Id="i100">
                 <PropertyName>StackTrace</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>ErrorStack</_expression>
@@ -936,7 +959,7 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i99">
+              <PropertyValue z:Id="i101">
                 <PropertyName>Source</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>ErrorFuente</_expression>
@@ -944,7 +967,7 @@ WHERE ""id_producto"" = :id_producto"</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i100">
+              <PropertyValue z:Id="i102">
                 <PropertyName>Exception</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>ErrorExcepcion</_expression>
@@ -961,10 +984,10 @@ WHERE ""id_producto"" = :id_producto"</_expression>
             <Text></Text>
             <_activityFullName>BR.Core.Base.Catch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i101" i:type="ExecutedStep">
+          <AbstractStep z:Id="i103" i:type="ExecutedStep">
             <Childs />
             <Id>4c332e2d-e5b0-417c-9eb8-96da59e2c57c</Id>
-            <Parent z:Ref="i3" />
+            <Parent z:Ref="i5" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
@@ -986,754 +1009,15 @@ WHERE ""id_producto"" = :id_producto"</_expression>
         <Text></Text>
         <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
       </AbstractStep>
-      <AbstractStep z:Id="i102" i:type="ExecutedStep">
-        <Childs />
-        <Id>b37ac800-6350-4b4c-8aff-ee6a222a3f61</Id>
-        <Parent z:Ref="i2" />
-        <PropertyValues>
-          <PropertyValue z:Id="i103">
-            <PropertyName>Count</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>3</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-        </PropertyValues>
-        <SelectedOptionId>0</SelectedOptionId>
-        <AutoCloseMode>None</AutoCloseMode>
-        <EnableStatus>false</EnableStatus>
-        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-        <RetryCount>-1</RetryCount>
-        <Text></Text>
-        <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
-      </AbstractStep>
       <AbstractStep z:Id="i104" i:type="ExecutedStep">
-        <Childs>
-          <AbstractStep z:Id="i105" i:type="ExecutedStep">
-            <Childs />
-            <Id>7367beea-835e-4f4f-ab31-701edcd02f22</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i106">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>int.Parse(Producto["id"].ToString())</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i107">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>IdProducto</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i108" i:type="ExecutedStep">
-            <Childs />
-            <Id>aa82215d-3a1f-4d1c-aa98-183390774601</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i109">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto["id"].ToString()</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i110">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>IdProducto</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>false</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i111" i:type="ExecutedStep">
-            <Childs />
-            <Id>9996b23f-373f-416b-b9d2-87b743340db0</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i112">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto["title"].ToString()</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i113">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Titulo</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i114" i:type="ExecutedStep">
-            <Childs />
-            <Id>0757209f-cfa7-479b-b178-889d6aa0a42d</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i115">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>decimal.Parse(Producto["price"].ToString(), System.Globalization.CultureInfo.InvariantCulture);</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i116">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Precio</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i117" i:type="ExecutedStep">
-            <Childs />
-            <Id>dc3da8ff-79b0-471e-b459-148846051306</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i118">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto["category"].ToString()</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i119">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Categoria</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i120" i:type="ExecutedStep">
-            <Childs />
-            <Id>e73d852c-c2fd-4c3f-b1f0-db187f1ba177</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i121">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto["description"].ToString()</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i122">
-                <PropertyName>To</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Descripcion</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i123" i:type="ExecutedStep">
-            <Childs />
-            <Id>9cb2bf87-510a-4958-99e0-3b1aa83f4c3f</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i124">
-                <PropertyName>AffectedRecords</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>RegistrosModificados</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i125">
-                <PropertyName>InSqlConnection</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>ConexionBD</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i126">
-                <PropertyName>SqlQuery</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>@"INSERT INTO ""productos""
-(""id_producto"", ""title"", ""price"", ""category"", ""description"")
-VALUES (:id_producto, :title, :price::numeric, :category, :description)
-ON CONFLICT (id_producto) DO NOTHING"</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i127">
-                <PropertyName>Timeout</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>3</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i128">
-                <PropertyName>Params</PropertyName>
-                <_dataType>Value</_dataType>
-                <_expression i:nil="true" />
-                <_screenShotBase64 i:nil="true" />
-                <_value xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d9p1:ArrayOfArgumentItem">
-                  <d9p1:ArgumentItem z:Id="i129">
-                    <d9p1:ArgumentName>id_producto</d9p1:ArgumentName>
-                    <d9p1:Expression>IdProducto</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i130">
-                    <d9p1:ArgumentName>title</d9p1:ArgumentName>
-                    <d9p1:Expression>Titulo</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i131">
-                    <d9p1:ArgumentName>price</d9p1:ArgumentName>
-                    <d9p1:Expression>Precio</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i132">
-                    <d9p1:ArgumentName>category</d9p1:ArgumentName>
-                    <d9p1:Expression>Categoria</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i133">
-                    <d9p1:ArgumentName>description</d9p1:ArgumentName>
-                    <d9p1:Expression>Descripcion</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                </_value>
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId>0</SelectedOptionId>
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.DataBaseSQL.SqlExecuteNonQuery</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i134" i:type="ExecutedStep">
-            <Childs />
-            <Id>16270b10-bc6e-4810-ba99-18e3703da4f5</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i135">
-                <PropertyName>Count</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>3</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId>0</SelectedOptionId>
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>false</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i136" i:type="ExecutedStep">
-            <Childs>
-              <AbstractStep z:Id="i137" i:type="ExecutedStep">
-                <Childs>
-                  <AbstractStep z:Id="i138" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>dd9c62bb-b4d1-4b54-af7f-a1e3af3a0227</Id>
-                    <Parent z:Ref="i137" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i139">
-                        <PropertyName>Text</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>$"Se registró exitosamente el producto: {Titulo} (ID de producto: {IdProducto}).";</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId i:nil="true" />
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i140" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>d32656e3-a17f-4d29-9bb0-dbfffd807b14</Id>
-                    <Parent z:Ref="i137" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i141">
-                        <PropertyName>Text</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>$"Se registró exitosamente el producto: {Titulo} (ID de producto: {IdProducto}).";</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i142">
-                        <PropertyName>Timeout</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>5</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId i:nil="true" />
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>false</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i143" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>5bccae8f-1070-401e-a3e2-59d4486e0c71</Id>
-                    <Parent z:Ref="i137" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i144">
-                        <PropertyName>Count</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>3</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId>0</SelectedOptionId>
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>false</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
-                  </AbstractStep>
-                </Childs>
-                <Id>8082eae8-15ef-4463-9347-5977d8f706da</Id>
-                <Parent z:Ref="i136" />
-                <PropertyValues />
-                <SelectedOptionId i:nil="true" />
-                <AutoCloseMode>None</AutoCloseMode>
-                <EnableStatus>true</EnableStatus>
-                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                <RetryCount>-1</RetryCount>
-                <Text></Text>
-                <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
-              </AbstractStep>
-              <AbstractStep z:Id="i145" i:type="ExecutedStep">
-                <Childs>
-                  <AbstractStep z:Id="i146" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>9800928b-385d-44ac-a74b-b955f7578c7a</Id>
-                    <Parent z:Ref="i145" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i147">
-                        <PropertyName>Result</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>ProductoExistente</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i148">
-                        <PropertyName>InSqlConnection</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>ConexionBD</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i149">
-                        <PropertyName>SqlQuery</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>@"SELECT * 
-FROM ""productos""
-WHERE ""id_producto"" = :id_producto"</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i150">
-                        <PropertyName>Timeout</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>3</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i151">
-                        <PropertyName>Params</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_screenShotBase64 i:nil="true" />
-                        <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
-                          <d13p1:ArgumentItem z:Id="i152">
-                            <d13p1:ArgumentName>id_producto</d13p1:ArgumentName>
-                            <d13p1:Expression>IdProducto</d13p1:Expression>
-                            <d13p1:Type i:nil="true" />
-                          </d13p1:ArgumentItem>
-                        </_value>
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId>0</SelectedOptionId>
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>Activities.DataBaseSQL.SqlExecuteQuery</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i153" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>49fd5c39-c364-43da-b626-c6d2af217486</Id>
-                    <Parent z:Ref="i145" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i154">
-                        <PropertyName>Separator</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_screenShotBase64 i:nil="true" />
-                        <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/Activities.BaseCollections.DataTable.Logic.Enums" i:type="d13p1:TypeSeparator">Comma</_value>
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i155">
-                        <PropertyName>Output</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>ProductoFila</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i156">
-                        <PropertyName>BaseDataTable</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>ProductoExistente</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId>0</SelectedOptionId>
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>Activities.BaseCollections.DT.OutputDataTable</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i157" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>f84d7a5a-9f04-4b57-a538-d51286484053</Id>
-                    <Parent z:Ref="i145" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i158">
-                        <PropertyName>Text</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>$"Producto duplicado: {ProductoExistente.Rows[0]["title"]} (ID de producto: {ProductoExistente.Rows[0]["id_producto"]}) ya existe en la base de datos."</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i159">
-                        <PropertyName>Level</PropertyName>
-                        <_dataType>Value</_dataType>
-                        <_expression i:nil="true" />
-                        <_screenShotBase64 i:nil="true" />
-                        <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core.Base" i:type="d13p1:LogLevel">Warn</_value>
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId i:nil="true" />
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i160" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>90fe7d87-95f3-4cbd-ae19-9cce3f88f4b9</Id>
-                    <Parent z:Ref="i145" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i161">
-                        <PropertyName>Text</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>$"Producto duplicado: {ProductoExistente.Rows[0]["title"]} (ID de producto: {ProductoExistente.Rows[0]["id_producto"]}) ya existe en la base de datos."</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                      <PropertyValue z:Id="i162">
-                        <PropertyName>Timeout</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>5</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId i:nil="true" />
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>false</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
-                  </AbstractStep>
-                  <AbstractStep z:Id="i163" i:type="ExecutedStep">
-                    <Childs />
-                    <Id>d3772e4d-d8cf-4860-a3fa-592bb8fd7302</Id>
-                    <Parent z:Ref="i145" />
-                    <PropertyValues>
-                      <PropertyValue z:Id="i164">
-                        <PropertyName>Count</PropertyName>
-                        <_dataType>Expression</_dataType>
-                        <_expression>3</_expression>
-                        <_screenShotBase64 i:nil="true" />
-                        <_value i:nil="true" />
-                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-                      </PropertyValue>
-                    </PropertyValues>
-                    <SelectedOptionId>0</SelectedOptionId>
-                    <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>false</EnableStatus>
-                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                    <RetryCount>-1</RetryCount>
-                    <Text></Text>
-                    <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
-                  </AbstractStep>
-                </Childs>
-                <Id>6161e3a1-56ef-458b-8c6d-4657a85b7f36</Id>
-                <Parent z:Ref="i136" />
-                <PropertyValues />
-                <SelectedOptionId i:nil="true" />
-                <AutoCloseMode>None</AutoCloseMode>
-                <EnableStatus>true</EnableStatus>
-                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-                <RetryCount>-1</RetryCount>
-                <Text></Text>
-                <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
-              </AbstractStep>
-            </Childs>
-            <Id>dea305f9-acd1-4794-8a5e-46cb99041223</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i165">
-                <PropertyName>Condition</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>RegistrosModificados &gt; 0</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.If</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i166" i:type="ExecutedStep">
-            <Childs />
-            <Id>72f71fba-c68e-49db-ae3f-23871625ac40</Id>
-            <Parent z:Ref="i104" />
-            <PropertyValues>
-              <PropertyValue z:Id="i167">
-                <PropertyName>Count</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>3</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId>0</SelectedOptionId>
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>false</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
-          </AbstractStep>
-        </Childs>
-        <Id>5de6c5e7-e4b8-4865-84ea-b31f2285ebda</Id>
-        <Parent z:Ref="i2" />
-        <PropertyValues>
-          <PropertyValue z:Id="i168">
-            <PropertyName>Collection</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>ListaProductos</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i169">
-            <PropertyName>Iterator</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>Producto</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i170">
-            <PropertyName>Counter</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>ProductosProcesados</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-        </PropertyValues>
-        <SelectedOptionId i:nil="true" />
-        <AutoCloseMode>None</AutoCloseMode>
-        <EnableStatus>false</EnableStatus>
-        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-        <RetryCount>-1</RetryCount>
-        <Text></Text>
-        <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
-      </AbstractStep>
-      <AbstractStep z:Id="i171" i:type="ExecutedStep">
         <Childs />
-        <Id>a842cab4-7478-4ab0-b4b5-f90b8b98811a</Id>
+        <Id>07f09702-83b1-42d4-a2f3-20e2e603b6ca</Id>
         <Parent z:Ref="i2" />
         <PropertyValues>
-          <PropertyValue z:Id="i172">
-            <PropertyName>Result</PropertyName>
+          <PropertyValue z:Id="i105">
+            <PropertyName>Text</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>QueryProductos</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i173">
-            <PropertyName>InSqlConnection</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>ConexionBD</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i174">
-            <PropertyName>Timeout</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>5</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i175">
-            <PropertyName>Params</PropertyName>
-            <_dataType>Value</_dataType>
-            <_expression i:nil="true" />
-            <_screenShotBase64 i:nil="true" />
-            <_value xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d7p1:ArrayOfArgumentItem" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i176">
-            <PropertyName>SqlQuery</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>@"SELECT * 
-FROM ""productos""
-ORDER BY ""id_producto"" ASC"</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-        </PropertyValues>
-        <SelectedOptionId>0</SelectedOptionId>
-        <AutoCloseMode>None</AutoCloseMode>
-        <EnableStatus>false</EnableStatus>
-        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-        <RetryCount>-1</RetryCount>
-        <Text>Consultamos todos los campos insertados en bd</Text>
-        <_activityFullName>Activities.DataBaseSQL.SqlExecuteQuery</_activityFullName>
-      </AbstractStep>
-      <AbstractStep z:Id="i177" i:type="ExecutedStep">
-        <Childs />
-        <Id>ffe257f7-9415-405a-ae7b-a4998f0f9063</Id>
-        <Parent z:Ref="i2" />
-        <PropertyValues>
-          <PropertyValue z:Id="i178">
-            <PropertyName>Value</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>QueryProductos</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i179">
-            <PropertyName>To</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>CamposAlmacenados</_expression>
+            <_expression>"Finalización de inserción en la base de datos"</_expression>
             <_screenShotBase64 i:nil="true" />
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -1741,509 +1025,11 @@ ORDER BY ""id_producto"" ASC"</_expression>
         </PropertyValues>
         <SelectedOptionId i:nil="true" />
         <AutoCloseMode>None</AutoCloseMode>
-        <EnableStatus>false</EnableStatus>
+        <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text>Exportamos tabla de campos insertados en bd, como parametro</Text>
-        <_activityFullName>BR.Core.Base.Assign</_activityFullName>
-      </AbstractStep>
-      <AbstractStep z:Id="i180" i:type="ExecutedStep">
-        <Childs>
-          <AbstractStep z:Id="i181" i:type="ExecutedStep">
-            <Childs />
-            <Id>38fc4141-d1bf-4cb2-b413-053fdee17fbe</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i182">
-                <PropertyName>InitialItems</PropertyName>
-                <_dataType>Value</_dataType>
-                <_expression i:nil="true" />
-                <_screenShotBase64 i:nil="true" />
-                <_value xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.Collections" i:type="d9p1:DictionarySettings">
-                  <d9p1:ArgumentsToCompile xmlns:d10p1="http://schemas.datacontract.org/2004/07/BR.Core">
-                    <d10p1:ArgumentItem z:Id="i183">
-                      <d10p1:ArgumentName>id</d10p1:ArgumentName>
-                      <d10p1:Expression>null</d10p1:Expression>
-                      <d10p1:Type>System.Object</d10p1:Type>
-                    </d10p1:ArgumentItem>
-                    <d10p1:ArgumentItem z:Id="i184">
-                      <d10p1:ArgumentName>title</d10p1:ArgumentName>
-                      <d10p1:Expression>null</d10p1:Expression>
-                      <d10p1:Type>System.Object</d10p1:Type>
-                    </d10p1:ArgumentItem>
-                    <d10p1:ArgumentItem z:Id="i185">
-                      <d10p1:ArgumentName>price</d10p1:ArgumentName>
-                      <d10p1:Expression>null</d10p1:Expression>
-                      <d10p1:Type>System.Object</d10p1:Type>
-                    </d10p1:ArgumentItem>
-                    <d10p1:ArgumentItem z:Id="i186">
-                      <d10p1:ArgumentName>category</d10p1:ArgumentName>
-                      <d10p1:Expression>null</d10p1:Expression>
-                      <d10p1:Type>System.Object</d10p1:Type>
-                    </d10p1:ArgumentItem>
-                    <d10p1:ArgumentItem z:Id="i187">
-                      <d10p1:ArgumentName>description</d10p1:ArgumentName>
-                      <d10p1:Expression>null</d10p1:Expression>
-                      <d10p1:Type>System.Object</d10p1:Type>
-                    </d10p1:ArgumentItem>
-                  </d9p1:ArgumentsToCompile>
-                </_value>
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i188">
-                <PropertyName>Dictionary</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>DicProducto</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.BaseCollections.Dictionary.CreateDictionary</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i189" i:type="ExecutedStep">
-            <Childs />
-            <Id>026972d7-4d3d-40fc-aa65-0b7b898adcb6</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i190">
-                <PropertyName>Key</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>"id"</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i191">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto["id"]</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i192">
-                <PropertyName>Dictionary</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>DicProducto</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i193" i:type="ExecutedStep">
-            <Childs />
-            <Id>824afd38-7679-4659-bb4d-4980f6cb68f2</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i194">
-                <PropertyName>Key</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>"title"</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i195">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto["title"]</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i196">
-                <PropertyName>Dictionary</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>DicProducto</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i197" i:type="ExecutedStep">
-            <Childs />
-            <Id>818a6e1d-183f-4a08-9448-b1f76248ed86</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i198">
-                <PropertyName>Key</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>"price"</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i199">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto["price"]</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i200">
-                <PropertyName>Dictionary</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>DicProducto</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i201" i:type="ExecutedStep">
-            <Childs />
-            <Id>9e2fc8e9-19d3-4dbc-82fc-f9353aa4d712</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i202">
-                <PropertyName>Key</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>"category"</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i203">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto["category"]</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i204">
-                <PropertyName>Dictionary</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>DicProducto</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i205" i:type="ExecutedStep">
-            <Childs />
-            <Id>82941930-f6b4-4f46-a765-1e899a3b88c4</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i206">
-                <PropertyName>Key</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>"description"</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i207">
-                <PropertyName>Value</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto["description"]</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i208">
-                <PropertyName>Dictionary</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>DicProducto</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.BaseCollections.Dictionary.AddKey</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i209" i:type="ExecutedStep">
-            <Childs />
-            <Id>2843efb7-46c0-434b-8434-a568b504fe93</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i210">
-                <PropertyName>JSONElement</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i211">
-                <PropertyName>PropertyName</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>"title"</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i212">
-                <PropertyName>JSONProperty</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>propiedad</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i213">
-                <PropertyName>PropertyValue</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>valor</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i214">
-                <PropertyName>ValueKind</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>tipo</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>false</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.Parsing.JSONElementGetProperty</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i215" i:type="ExecutedStep">
-            <Childs />
-            <Id>fa417b66-d65c-498d-8046-a1f0493d1d7f</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i216">
-                <PropertyName>Count</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>3</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId>0</SelectedOptionId>
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i217" i:type="ExecutedStep">
-            <Childs />
-            <Id>7f490ff6-35a9-49a8-98be-84e5613aa2b3</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i218">
-                <PropertyName>AffectedRecords</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>RegistrosModificados</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i219">
-                <PropertyName>InSqlConnection</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>ConexionBD</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i220">
-                <PropertyName>SqlQuery</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>@"INSERT INTO ""productos""
-(""id_producto"", ""title"", ""price"", ""category"", ""description"")
-VALUES (:id_producto, :title, :price::numeric, :category, :description)
-ON CONFLICT (id_producto) DO NOTHING"</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i221">
-                <PropertyName>Timeout</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>3</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i222">
-                <PropertyName>Params</PropertyName>
-                <_dataType>Value</_dataType>
-                <_expression i:nil="true" />
-                <_screenShotBase64 i:nil="true" />
-                <_value xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d9p1:ArrayOfArgumentItem">
-                  <d9p1:ArgumentItem z:Id="i223">
-                    <d9p1:ArgumentName>id_producto</d9p1:ArgumentName>
-                    <d9p1:Expression>Producto["id"].ToString()</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i224">
-                    <d9p1:ArgumentName>title</d9p1:ArgumentName>
-                    <d9p1:Expression>Producto["title"].ToString()</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i225">
-                    <d9p1:ArgumentName>price</d9p1:ArgumentName>
-                    <d9p1:Expression>Producto["price"].ToString()</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i226">
-                    <d9p1:ArgumentName>category</d9p1:ArgumentName>
-                    <d9p1:Expression>Producto["category"].ToString()</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                  <d9p1:ArgumentItem z:Id="i227">
-                    <d9p1:ArgumentName>description</d9p1:ArgumentName>
-                    <d9p1:Expression>Producto["description"].ToString()</d9p1:Expression>
-                    <d9p1:Type i:nil="true" />
-                  </d9p1:ArgumentItem>
-                </_value>
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId>0</SelectedOptionId>
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.DataBaseSQL.SqlExecuteNonQuery</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i228" i:type="ExecutedStep">
-            <Childs />
-            <Id>4bfd5b80-e0c9-4e73-8762-8e197a566bfe</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i229">
-                <PropertyName>Count</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>3</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId>0</SelectedOptionId>
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>BR.Core.Base.Sleep</_activityFullName>
-          </AbstractStep>
-          <AbstractStep z:Id="i230" i:type="ExecutedStep">
-            <Childs />
-            <Id>b2d3f546-137d-442b-bba7-70237de807e4</Id>
-            <Parent z:Ref="i180" />
-            <PropertyValues>
-              <PropertyValue z:Id="i231">
-                <PropertyName>Text</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>Producto.ToString()</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-              <PropertyValue z:Id="i232">
-                <PropertyName>Timeout</PropertyName>
-                <_dataType>Expression</_dataType>
-                <_expression>2</_expression>
-                <_screenShotBase64 i:nil="true" />
-                <_value i:nil="true" />
-                <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-              </PropertyValue>
-            </PropertyValues>
-            <SelectedOptionId i:nil="true" />
-            <AutoCloseMode>None</AutoCloseMode>
-            <EnableStatus>true</EnableStatus>
-            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-            <RetryCount>-1</RetryCount>
-            <Text></Text>
-            <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
-          </AbstractStep>
-        </Childs>
-        <Id>798a2338-a7f2-42ee-9875-56d439bcf3d0</Id>
-        <Parent z:Ref="i2" />
-        <PropertyValues>
-          <PropertyValue z:Id="i233">
-            <PropertyName>Collection</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>ProductList</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i234">
-            <PropertyName>Iterator</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression>Producto</_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-          <PropertyValue z:Id="i235">
-            <PropertyName>Counter</PropertyName>
-            <_dataType>Expression</_dataType>
-            <_expression></_expression>
-            <_screenShotBase64 i:nil="true" />
-            <_value i:nil="true" />
-            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
-          </PropertyValue>
-        </PropertyValues>
-        <SelectedOptionId i:nil="true" />
-        <AutoCloseMode>None</AutoCloseMode>
-        <EnableStatus>false</EnableStatus>
-        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
-        <RetryCount>-1</RetryCount>
-        <Text></Text>
-        <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
+        <Text>Escribir un log de finalización de inserción en la bd</Text>
+        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
       </AbstractStep>
     </Childs>
     <Id>e6ef645b-840f-4b22-9e38-b604a8bd54ba</Id>
@@ -2260,35 +1046,35 @@ ON CONFLICT (id_producto) DO NOTHING"</_expression>
   <Name>DataBase.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i236">
+    <Parameter z:Id="i106">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>ListaProductos</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i237">
+    <Parameter z:Id="i107">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>Config</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i238">
+    <Parameter z:Id="i108">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>CamposAlmacenados</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Data.DataTable</TypeString>
     </Parameter>
-    <Parameter z:Id="i239">
+    <Parameter z:Id="i109">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>Producto</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
     </Parameter>
-    <Parameter z:Id="i240">
+    <Parameter z:Id="i110">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>ConexionBD</Name>

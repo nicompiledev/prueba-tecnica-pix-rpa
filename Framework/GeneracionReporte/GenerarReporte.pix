@@ -6,15 +6,37 @@
   <Logic z:Id="i2" i:type="ExecutedStep">
     <Childs>
       <AbstractStep z:Id="i3" i:type="ExecutedStep">
+        <Childs />
+        <Id>2373f0d5-83fc-4d02-af05-8cea99e55965</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i4">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Inicializando generación de reporte."</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Escribir el log "Inicio generación de reporte".</Text>
+        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+      </AbstractStep>
+      <AbstractStep z:Id="i5" i:type="ExecutedStep">
         <Childs>
-          <AbstractStep z:Id="i4" i:type="ExecutedStep">
+          <AbstractStep z:Id="i6" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i5" i:type="ExecutedStep">
+              <AbstractStep z:Id="i7" i:type="ExecutedStep">
                 <Childs />
                 <Id>026714bf-c155-4db9-82ae-a40d56f85b89</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i6">
+                  <PropertyValue z:Id="i8">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Config["ServerAddress"].ToString()</_expression>
@@ -22,7 +44,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i7">
+                  <PropertyValue z:Id="i9">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>ServerAddress</_expression>
@@ -39,12 +61,12 @@
                 <Text>Definimos servidor para conexion bd</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i8" i:type="ExecutedStep">
+              <AbstractStep z:Id="i10" i:type="ExecutedStep">
                 <Childs />
                 <Id>0281f7f0-b6c7-43a6-9351-87bf793fa34e</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i9">
+                  <PropertyValue z:Id="i11">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Config["DatabaseName"].ToString()</_expression>
@@ -52,7 +74,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i10">
+                  <PropertyValue z:Id="i12">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>DatabaseName</_expression>
@@ -69,12 +91,12 @@
                 <Text>Definimos base de datos a trabajar</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i11" i:type="ExecutedStep">
+              <AbstractStep z:Id="i13" i:type="ExecutedStep">
                 <Childs />
                 <Id>c7996ad2-c910-4153-8223-2c6a640f7ba0</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i12">
+                  <PropertyValue z:Id="i14">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Config["UserName"].ToString()</_expression>
@@ -82,7 +104,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i13">
+                  <PropertyValue z:Id="i15">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>UserName</_expression>
@@ -99,12 +121,12 @@
                 <Text>Definimos usuario con acceso al servidor bd</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i14" i:type="ExecutedStep">
+              <AbstractStep z:Id="i16" i:type="ExecutedStep">
                 <Childs />
                 <Id>c494aee3-8850-4bae-9877-7e3e5824bde3</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i15">
+                  <PropertyValue z:Id="i17">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>Config["UserPassword"].ToString()</_expression>
@@ -112,7 +134,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i16">
+                  <PropertyValue z:Id="i18">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>UserPassword</_expression>
@@ -129,12 +151,12 @@
                 <Text>Definimos password del usuario con acceso al servidor bd</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i17" i:type="ExecutedStep">
+              <AbstractStep z:Id="i19" i:type="ExecutedStep">
                 <Childs />
                 <Id>1344b9a5-4034-4140-82c9-89ec8cdef83f</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i18">
+                  <PropertyValue z:Id="i20">
                     <PropertyName>Value</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>@$"Server={ServerAddress};Database={DatabaseName}; UID={UserName};PWD={UserPassword}"</_expression>
@@ -142,7 +164,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i19">
+                  <PropertyValue z:Id="i21">
                     <PropertyName>To</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>CadenaConexion</_expression>
@@ -159,12 +181,12 @@
                 <Text>Definir cadena conexion bd</Text>
                 <_activityFullName>BR.Core.Base.Assign</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i20" i:type="ExecutedStep">
+              <AbstractStep z:Id="i22" i:type="ExecutedStep">
                 <Childs />
                 <Id>fcca1c0e-7159-4c42-8a1c-1a72876cd34d</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i21">
+                  <PropertyValue z:Id="i23">
                     <PropertyName>Result</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>TablaProductos</_expression>
@@ -172,7 +194,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i22">
+                  <PropertyValue z:Id="i24">
                     <PropertyName>InSqlConnection</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>ConexionBD</_expression>
@@ -180,7 +202,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i23">
+                  <PropertyValue z:Id="i25">
                     <PropertyName>Timeout</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>5</_expression>
@@ -188,7 +210,7 @@
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i24">
+                  <PropertyValue z:Id="i26">
                     <PropertyName>Params</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
@@ -196,7 +218,7 @@
                     <_value xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d11p1:ArrayOfArgumentItem" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i25">
+                  <PropertyValue z:Id="i27">
                     <PropertyName>SqlQuery</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>@"SELECT * 
@@ -206,7 +228,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i26">
+                  <PropertyValue z:Id="i28">
                     <PropertyName>DataBaseConnectionString</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>CadenaConexion</_expression>
@@ -214,7 +236,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i27">
+                  <PropertyValue z:Id="i29">
                     <PropertyName>ProviderName</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>"Npgsql"</_expression>
@@ -231,14 +253,23 @@ ORDER BY ""id_producto"" ASC"</_expression>
                 <Text>Consultamos todos los campos insertados en bd</Text>
                 <_activityFullName>Activities.DataBaseSQL.SqlExecuteQuery</_activityFullName>
               </AbstractStep>
-              <AbstractStep z:Id="i28" i:type="ExecutedStep">
+              <AbstractStep z:Id="i30" i:type="CommentStep">
+                <Childs />
+                <Id>5a2dca07-f410-42de-8b33-943092646ec7</Id>
+                <Parent z:Ref="i6" />
+                <PropertyValues />
+                <SelectedOptionId i:nil="true" />
+                <IsCollapsed>false</IsCollapsed>
+                <Text>// Lógica para generar reporte excel usando LINQ de .NET (Language Integrated Query)</Text>
+              </AbstractStep>
+              <AbstractStep z:Id="i31" i:type="ExecutedStep">
                 <Childs>
-                  <AbstractStep z:Id="i29" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i32" i:type="ExecutedStep">
                     <Childs />
                     <Id>9adfc2d6-3f69-410b-956b-d44cbdfea5c1</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i30">
+                      <PropertyValue z:Id="i33">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>TablaProductos.AsEnumerable()
@@ -269,7 +300,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i31">
+                      <PropertyValue z:Id="i34">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>PreciosValidados</_expression>
@@ -286,12 +317,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>PreciosValidados (DataTable)</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i32" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i35" i:type="ExecutedStep">
                     <Childs />
                     <Id>bfc0de89-d082-4da6-954c-3f94b7357867</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i33">
+                      <PropertyValue z:Id="i36">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>TablaProductos.AsEnumerable()
@@ -336,7 +367,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i34">
+                      <PropertyValue z:Id="i37">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>ListCategorias</_expression>
@@ -353,12 +384,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Categorias ordenadas alfabeticamente  (DataTable)</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i35" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i38" i:type="ExecutedStep">
                     <Childs />
                     <Id>80ec1a6d-1d33-481b-a4d3-f40dc72d3081</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i36">
+                      <PropertyValue z:Id="i39">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>new Dictionary&lt;string, object&gt;
@@ -370,7 +401,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i37">
+                      <PropertyValue z:Id="i40">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>DicResumenGeneral</_expression>
@@ -387,14 +418,14 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Diccionario General</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i38" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i41" i:type="ExecutedStep">
                     <Childs>
-                      <AbstractStep z:Id="i39" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i42" i:type="ExecutedStep">
                         <Childs />
                         <Id>eb697660-5073-401b-a27a-715967271f2e</Id>
-                        <Parent z:Ref="i38" />
+                        <Parent z:Ref="i41" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i40">
+                          <PropertyValue z:Id="i43">
                             <PropertyName>Value</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>ProductList
@@ -424,7 +455,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i41">
+                          <PropertyValue z:Id="i44">
                             <PropertyName>To</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>ListCategorias</_expression>
@@ -441,12 +472,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <Text>Categorias sin orden alfabetico</Text>
                         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i42" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i45" i:type="ExecutedStep">
                         <Childs />
                         <Id>28c1b6f8-0dcd-4a56-b63f-aed6d2c4b786</Id>
-                        <Parent z:Ref="i38" />
+                        <Parent z:Ref="i41" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i43">
+                          <PropertyValue z:Id="i46">
                             <PropertyName>Value</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>ProductList
@@ -477,7 +508,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i44">
+                          <PropertyValue z:Id="i47">
                             <PropertyName>To</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>ListCategorias</_expression>
@@ -494,12 +525,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <Text>Categorias ordenadas alfabeticamente</Text>
                         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i45" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i48" i:type="ExecutedStep">
                         <Childs />
                         <Id>b5f47ece-a6a7-470c-8212-6771fa2aeba1</Id>
-                        <Parent z:Ref="i38" />
+                        <Parent z:Ref="i41" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i46">
+                          <PropertyValue z:Id="i49">
                             <PropertyName>JSONString</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>ContenidoRespuesta</_expression>
@@ -507,7 +538,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i47">
+                          <PropertyValue z:Id="i50">
                             <PropertyName>Result</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>JsonResponse</_expression>
@@ -524,12 +555,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <Text></Text>
                         <_activityFullName>Activities.Parsing.JSONParsing</_activityFullName>
                       </AbstractStep>
-                      <AbstractStep z:Id="i48" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i51" i:type="ExecutedStep">
                         <Childs />
                         <Id>eac915d9-e6ae-48ee-8a2a-2c342ee21f20</Id>
-                        <Parent z:Ref="i38" />
+                        <Parent z:Ref="i41" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i49">
+                          <PropertyValue z:Id="i52">
                             <PropertyName>Value</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>ProductList
@@ -554,7 +585,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i50">
+                          <PropertyValue z:Id="i53">
                             <PropertyName>To</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>PreciosValidados</_expression>
@@ -573,7 +604,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                       </AbstractStep>
                     </Childs>
                     <Id>c678b340-0d0b-439b-921b-b017458f03c7</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues />
                     <SelectedOptionId i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
@@ -583,12 +614,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Codigo anterior</Text>
                     <_activityFullName>BR.Core.Base.Container</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i51" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i54" i:type="ExecutedStep">
                     <Childs />
                     <Id>72ad35c7-2473-496d-baab-2b6a18b051ef</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i52">
+                      <PropertyValue z:Id="i55">
                         <PropertyName>InitialTable</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
@@ -616,7 +647,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         </_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i53">
+                      <PropertyValue z:Id="i56">
                         <PropertyName>BaseDataTable</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>ResumenGeneral</_expression>
@@ -633,12 +664,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Crear tabla Resumen General</Text>
                     <_activityFullName>Activities.BaseCollections.DT.CreateTable</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i54" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i57" i:type="ExecutedStep">
                     <Childs />
                     <Id>b82e1535-c2bc-4057-9cda-b39d7bf35fd9</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i55">
+                      <PropertyValue z:Id="i58">
                         <PropertyName>Row</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>DicResumenGeneral</_expression>
@@ -646,7 +677,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i56">
+                      <PropertyValue z:Id="i59">
                         <PropertyName>BaseDataTable</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>ResumenGeneral</_expression>
@@ -663,12 +694,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Añadir fila a Resumen General</Text>
                     <_activityFullName>Activities.BaseCollections.DT.AddRow</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i57" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i60" i:type="ExecutedStep">
                     <Childs />
                     <Id>e18c91fe-069f-41df-bcc5-2a7d084b1b8c</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i58">
+                      <PropertyValue z:Id="i61">
                         <PropertyName>InitialTable</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
@@ -697,7 +728,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         </_value>
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i59">
+                      <PropertyValue z:Id="i62">
                         <PropertyName>BaseDataTable</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>ResumenCategorias</_expression>
@@ -714,14 +745,14 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Crear tabla Resumen Categoria</Text>
                     <_activityFullName>Activities.BaseCollections.DT.CreateTable</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i60" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i63" i:type="ExecutedStep">
                     <Childs>
-                      <AbstractStep z:Id="i61" i:type="ExecutedStep">
+                      <AbstractStep z:Id="i64" i:type="ExecutedStep">
                         <Childs />
                         <Id>3e8d9ef7-e897-48fb-a65e-948b9c4a65cb</Id>
-                        <Parent z:Ref="i60" />
+                        <Parent z:Ref="i63" />
                         <PropertyValues>
-                          <PropertyValue z:Id="i62">
+                          <PropertyValue z:Id="i65">
                             <PropertyName>Row</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>Categoria</_expression>
@@ -729,7 +760,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                             <_value i:nil="true" />
                             <_xpathSettings xmlns:d15p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                           </PropertyValue>
-                          <PropertyValue z:Id="i63">
+                          <PropertyValue z:Id="i66">
                             <PropertyName>BaseDataTable</PropertyName>
                             <_dataType>Expression</_dataType>
                             <_expression>ResumenCategorias</_expression>
@@ -748,9 +779,9 @@ ORDER BY ""id_producto"" ASC"</_expression>
                       </AbstractStep>
                     </Childs>
                     <Id>8f9b9a58-8a53-47db-8890-5a6f0d87e7d1</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i64">
+                      <PropertyValue z:Id="i67">
                         <PropertyName>Collection</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>ListCategorias</_expression>
@@ -758,7 +789,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i65">
+                      <PropertyValue z:Id="i68">
                         <PropertyName>Iterator</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>Categoria</_expression>
@@ -766,7 +797,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i66">
+                      <PropertyValue z:Id="i69">
                         <PropertyName>Counter</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>CategoriasProcesadas</_expression>
@@ -783,12 +814,137 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Recorrer lista categorias y añadir las filas a la tabla Resumen Categoria</Text>
                     <_activityFullName>BR.Core.Base.LoopForEach</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i67" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i70" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>32574fd8-2eea-4711-8c9a-879e35cb5582</Id>
+                    <Parent z:Ref="i31" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i71">
+                        <PropertyName>FileDirectoryPath</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>@"Data\Output\Reportes"</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i72">
+                        <PropertyName>Result</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>RutaReportes</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>Activities.Files.PathExist</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i73" i:type="ExecutedStep">
+                    <Childs>
+                      <AbstractStep z:Id="i74" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i75" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>77047bbd-f754-48ca-8ef0-7af1a45680b0</Id>
+                            <Parent z:Ref="i74" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i76">
+                                <PropertyName>GUID</PropertyName>
+                                <_dataType>Value</_dataType>
+                                <_expression i:nil="true" />
+                                <_screenShotBase64 i:nil="true" />
+                                <_value xmlns:d17p1="http://www.w3.org/2001/XMLSchema" i:type="d17p1:string">832501c3-6903-40a0-8264-ff1bad1fabbd</_value>
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text>Ir al paso Definir RutaBase</Text>
+                            <_activityFullName>BR.BaseActivities.GoToStep</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>48ae294e-fce6-427c-a559-a61587bd30c6</Id>
+                        <Parent z:Ref="i73" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfTrue</_activityFullName>
+                      </AbstractStep>
+                      <AbstractStep z:Id="i77" i:type="ExecutedStep">
+                        <Childs>
+                          <AbstractStep z:Id="i78" i:type="ExecutedStep">
+                            <Childs />
+                            <Id>ade19e28-cd27-440b-bc6f-daf7f7ddc2b1</Id>
+                            <Parent z:Ref="i77" />
+                            <PropertyValues>
+                              <PropertyValue z:Id="i79">
+                                <PropertyName>NewFolderPath</PropertyName>
+                                <_dataType>Expression</_dataType>
+                                <_expression>@"Data\Output\Reportes"</_expression>
+                                <_screenShotBase64 i:nil="true" />
+                                <_value i:nil="true" />
+                                <_xpathSettings xmlns:d17p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                              </PropertyValue>
+                            </PropertyValues>
+                            <SelectedOptionId i:nil="true" />
+                            <AutoCloseMode>None</AutoCloseMode>
+                            <EnableStatus>true</EnableStatus>
+                            <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                            <RetryCount>-1</RetryCount>
+                            <Text></Text>
+                            <_activityFullName>Activities.Files.CreateFolder</_activityFullName>
+                          </AbstractStep>
+                        </Childs>
+                        <Id>02a39e96-36e7-465e-98f5-341e5ce8da0c</Id>
+                        <Parent z:Ref="i73" />
+                        <PropertyValues />
+                        <SelectedOptionId i:nil="true" />
+                        <AutoCloseMode>None</AutoCloseMode>
+                        <EnableStatus>true</EnableStatus>
+                        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                        <RetryCount>-1</RetryCount>
+                        <Text></Text>
+                        <_activityFullName>BR.Core.Base.IfFalse</_activityFullName>
+                      </AbstractStep>
+                    </Childs>
+                    <Id>b84ac3cb-2abe-48bb-852e-4d23f35a9884</Id>
+                    <Parent z:Ref="i31" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i80">
+                        <PropertyName>Condition</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>RutaReportes</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text></Text>
+                    <_activityFullName>BR.Core.Base.If</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i81" i:type="ExecutedStep">
                     <Childs />
                     <Id>832501c3-6903-40a0-8264-ff1bad1fabbd</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i68">
+                      <PropertyValue z:Id="i82">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>@"Data\Output\Reportes"</_expression>
@@ -796,7 +952,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i69">
+                      <PropertyValue z:Id="i83">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>RutaBase</_expression>
@@ -810,15 +966,15 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
-                    <Text></Text>
+                    <Text>Definir RutaBase</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i70" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i84" i:type="ExecutedStep">
                     <Childs />
                     <Id>1a2608e0-2d25-4269-bfc5-23ba09591468</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i71">
+                      <PropertyValue z:Id="i85">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>DateTime.Now.ToString("yyMMdd_HHmmss");</_expression>
@@ -826,7 +982,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i72">
+                      <PropertyValue z:Id="i86">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>FechaActual</_expression>
@@ -840,15 +996,15 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
-                    <Text></Text>
+                    <Text>Definir FechaActual</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i73" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i87" i:type="ExecutedStep">
                     <Childs />
                     <Id>36433d42-dc9e-4d8a-a8a1-27fd76a33c86</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i74">
+                      <PropertyValue z:Id="i88">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"Reporte_{FechaActual}.xlsx";</_expression>
@@ -856,7 +1012,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i75">
+                      <PropertyValue z:Id="i89">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>NombreArchivo</_expression>
@@ -870,15 +1026,15 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
-                    <Text></Text>
+                    <Text>Definir NombreArchivo</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i76" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i90" i:type="ExecutedStep">
                     <Childs />
                     <Id>0af1b30d-920e-4a0d-8944-d01e3c4a1de6</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i77">
+                      <PropertyValue z:Id="i91">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>Path.Combine(RutaBase, NombreArchivo);
@@ -887,7 +1043,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i78">
+                      <PropertyValue z:Id="i92">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>RutaCompleta</_expression>
@@ -901,15 +1057,15 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
-                    <Text></Text>
+                    <Text>Definir RutaCompleta</Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i79" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i93" i:type="ExecutedStep">
                     <Childs />
                     <Id>a0760974-50a2-4513-8414-4f4f8925117b</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i80">
+                      <PropertyValue z:Id="i94">
                         <PropertyName>DataTable</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>TablaProductos</_expression>
@@ -917,7 +1073,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i81">
+                      <PropertyValue z:Id="i95">
                         <PropertyName>SheetName</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>"Listado Productos"</_expression>
@@ -925,7 +1081,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i82">
+                      <PropertyValue z:Id="i96">
                         <PropertyName>FileName</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>RutaCompleta</_expression>
@@ -942,12 +1098,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Añadir la tabla de productos registrados en la base de datos</Text>
                     <_activityFullName>Activities.Office.Excel.AppendRange</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i83" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i97" i:type="ExecutedStep">
                     <Childs />
                     <Id>9cc3b997-00fe-469f-abcd-d244bd824a93</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i84">
+                      <PropertyValue z:Id="i98">
                         <PropertyName>DataTable</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>ResumenGeneral</_expression>
@@ -955,7 +1111,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i85">
+                      <PropertyValue z:Id="i99">
                         <PropertyName>SheetName</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>"Resumen General"</_expression>
@@ -963,7 +1119,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i86">
+                      <PropertyValue z:Id="i100">
                         <PropertyName>FileName</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>RutaCompleta</_expression>
@@ -980,12 +1136,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Añadir la tabla de resumen general</Text>
                     <_activityFullName>Activities.Office.Excel.AppendRange</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i87" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i101" i:type="ExecutedStep">
                     <Childs />
                     <Id>f017da8e-8e5f-4a4d-93ec-4a1b9ce82170</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i88">
+                      <PropertyValue z:Id="i102">
                         <PropertyName>DataTable</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>ResumenCategorias</_expression>
@@ -993,7 +1149,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i89">
+                      <PropertyValue z:Id="i103">
                         <PropertyName>SheetName</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>"Resumen Categorias"</_expression>
@@ -1001,7 +1157,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i90">
+                      <PropertyValue z:Id="i104">
                         <PropertyName>FileName</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>RutaCompleta</_expression>
@@ -1018,12 +1174,12 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <Text>Añadir la tabla de resumen categorias</Text>
                     <_activityFullName>Activities.Office.Excel.AppendRange</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i91" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i105" i:type="ExecutedStep">
                     <Childs />
                     <Id>09b71377-3969-4054-acef-5840bc3882bf</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i92">
+                      <PropertyValue z:Id="i106">
                         <PropertyName>Value</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>@"C:\Users\nsfra\Downloads"</_expression>
@@ -1031,7 +1187,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i93">
+                      <PropertyValue z:Id="i107">
                         <PropertyName>To</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>RutaDestino</_expression>
@@ -1042,18 +1198,18 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
+                    <EnableStatus>false</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text></Text>
                     <_activityFullName>BR.Core.Base.Assign</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i94" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i108" i:type="ExecutedStep">
                     <Childs />
                     <Id>3fdfa64c-05f3-4bef-b39e-7e8299c6434c</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i95">
+                      <PropertyValue z:Id="i109">
                         <PropertyName>PathFrom</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>RutaCompleta</_expression>
@@ -1061,7 +1217,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i96">
+                      <PropertyValue z:Id="i110">
                         <PropertyName>PathTo</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>RutaDestino</_expression>
@@ -1072,18 +1228,18 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     </PropertyValues>
                     <SelectedOptionId i:nil="true" />
                     <AutoCloseMode>None</AutoCloseMode>
-                    <EnableStatus>true</EnableStatus>
+                    <EnableStatus>false</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
                     <Text>Copiar reporte excel a la carpeta Descargas para optimizar registro en formulario</Text>
                     <_activityFullName>Activities.Files.CopyFileCatalog</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i97" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i111" i:type="ExecutedStep">
                     <Childs />
                     <Id>b2483da9-3e0a-4da3-8131-b60dba20821b</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i98">
+                      <PropertyValue z:Id="i112">
                         <PropertyName>Text</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>$"Reporte ({NombreArchivo}) generado exitosamente en la ruta: {RutaBase}."</_expression>
@@ -1097,15 +1253,53 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <EnableStatus>true</EnableStatus>
                     <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                     <RetryCount>-1</RetryCount>
-                    <Text>Escribir un log de creación de archivo excel</Text>
+                    <Text>Escribir un log de creación de reporte en archivo excel</Text>
                     <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
                   </AbstractStep>
-                  <AbstractStep z:Id="i99" i:type="ExecutedStep">
+                  <AbstractStep z:Id="i113" i:type="ExecutedStep">
+                    <Childs />
+                    <Id>fd47bdb4-abf4-4493-bc5d-e604b36d7bad</Id>
+                    <Parent z:Ref="i31" />
+                    <PropertyValues>
+                      <PropertyValue z:Id="i114">
+                        <PropertyName>Text</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>$"({NombreArchivo}) generado exitosamente en la ruta: {RutaBase}."</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i115">
+                        <PropertyName>Title</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>"Reporte generado."</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                      <PropertyValue z:Id="i116">
+                        <PropertyName>Timeout</PropertyName>
+                        <_dataType>Expression</_dataType>
+                        <_expression>3</_expression>
+                        <_screenShotBase64 i:nil="true" />
+                        <_value i:nil="true" />
+                        <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                      </PropertyValue>
+                    </PropertyValues>
+                    <SelectedOptionId i:nil="true" />
+                    <AutoCloseMode>None</AutoCloseMode>
+                    <EnableStatus>true</EnableStatus>
+                    <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                    <RetryCount>-1</RetryCount>
+                    <Text>Ventana de mensajes: Reporte generado exitosamente:</Text>
+                    <_activityFullName>Activities.Interactive.MessageBox</_activityFullName>
+                  </AbstractStep>
+                  <AbstractStep z:Id="i117" i:type="ExecutedStep">
                     <Childs />
                     <Id>356eff86-4256-42ae-b98e-62461a855093</Id>
-                    <Parent z:Ref="i28" />
+                    <Parent z:Ref="i31" />
                     <PropertyValues>
-                      <PropertyValue z:Id="i100">
+                      <PropertyValue z:Id="i118">
                         <PropertyName>FilePath</PropertyName>
                         <_dataType>Expression</_dataType>
                         <_expression>@"Framework\Formulario\Formulario.pix"</_expression>
@@ -1113,20 +1307,20 @@ ORDER BY ""id_producto"" ASC"</_expression>
                         <_value i:nil="true" />
                         <_xpathSettings xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                       </PropertyValue>
-                      <PropertyValue z:Id="i101">
+                      <PropertyValue z:Id="i119">
                         <PropertyName>Parameters</PropertyName>
                         <_dataType>Value</_dataType>
                         <_expression i:nil="true" />
                         <_screenShotBase64 i:nil="true" />
                         <_value xmlns:d13p1="http://schemas.datacontract.org/2004/07/BR.Core" i:type="d13p1:ArrayOfArgumentItem">
-                          <d13p1:ArgumentItem z:Id="i102">
+                          <d13p1:ArgumentItem z:Id="i120">
                             <d13p1:ArgumentName>Config</d13p1:ArgumentName>
                             <d13p1:Expression>Config</d13p1:Expression>
                             <d13p1:Type>Dictionary&lt;System.String, System.Object&gt;</d13p1:Type>
                           </d13p1:ArgumentItem>
-                          <d13p1:ArgumentItem z:Id="i103">
-                            <d13p1:ArgumentName>NombreArchivo</d13p1:ArgumentName>
-                            <d13p1:Expression>NombreArchivo</d13p1:Expression>
+                          <d13p1:ArgumentItem z:Id="i121">
+                            <d13p1:ArgumentName>RutaArchivo</d13p1:ArgumentName>
+                            <d13p1:Expression>RutaCompleta</d13p1:Expression>
                             <d13p1:Type>System.String</d13p1:Type>
                           </d13p1:ArgumentItem>
                         </_value>
@@ -1143,19 +1337,19 @@ ORDER BY ""id_producto"" ASC"</_expression>
                   </AbstractStep>
                 </Childs>
                 <Id>02178951-92cd-42b7-8856-c1af8336fda7</Id>
-                <Parent z:Ref="i4" />
+                <Parent z:Ref="i6" />
                 <PropertyValues />
                 <SelectedOptionId i:nil="true" />
                 <AutoCloseMode>None</AutoCloseMode>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
-                <Text>Logica para generar reporte excel</Text>
+                <Text>Lógica para generar reporte excel</Text>
                 <_activityFullName>BR.Core.Base.Container</_activityFullName>
               </AbstractStep>
             </Childs>
             <Id>322c2a62-2471-4fec-a176-e4dcc4e06eb7</Id>
-            <Parent z:Ref="i3" />
+            <Parent z:Ref="i5" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
@@ -1165,14 +1359,14 @@ ORDER BY ""id_producto"" ASC"</_expression>
             <Text></Text>
             <_activityFullName>BR.Core.Base.Try</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i104" i:type="ExecutedStep">
+          <AbstractStep z:Id="i122" i:type="ExecutedStep">
             <Childs>
-              <AbstractStep z:Id="i105" i:type="ExecutedStep">
+              <AbstractStep z:Id="i123" i:type="ExecutedStep">
                 <Childs />
                 <Id>b125421c-718a-4ff6-a2f1-efea8b48e223</Id>
-                <Parent z:Ref="i104" />
+                <Parent z:Ref="i122" />
                 <PropertyValues>
-                  <PropertyValue z:Id="i106">
+                  <PropertyValue z:Id="i124">
                     <PropertyName>Text</PropertyName>
                     <_dataType>Expression</_dataType>
                     <_expression>$"Error: {ErrorMensaje}, Exepcion: {ErrorExcepcion}."</_expression>
@@ -1180,7 +1374,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                     <_value i:nil="true" />
                     <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
                   </PropertyValue>
-                  <PropertyValue z:Id="i107">
+                  <PropertyValue z:Id="i125">
                     <PropertyName>Level</PropertyName>
                     <_dataType>Value</_dataType>
                     <_expression i:nil="true" />
@@ -1194,14 +1388,36 @@ ORDER BY ""id_producto"" ASC"</_expression>
                 <EnableStatus>true</EnableStatus>
                 <ExceptionHandlingMode>Default</ExceptionHandlingMode>
                 <RetryCount>-1</RetryCount>
-                <Text>Escribir un log de error</Text>
+                <Text>Escribir un log de error en generación de reporte excel</Text>
                 <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+              </AbstractStep>
+              <AbstractStep z:Id="i126" i:type="ExecutedStep">
+                <Childs />
+                <Id>6a6ff84f-1c34-4591-bb82-b5139d0b3366</Id>
+                <Parent z:Ref="i122" />
+                <PropertyValues>
+                  <PropertyValue z:Id="i127">
+                    <PropertyName>Exception</PropertyName>
+                    <_dataType>Expression</_dataType>
+                    <_expression>new System.Exception($"Error: {ErrorMensaje}, Exepcion: {ErrorExcepcion}.")</_expression>
+                    <_screenShotBase64 i:nil="true" />
+                    <_value i:nil="true" />
+                    <_xpathSettings xmlns:d11p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+                  </PropertyValue>
+                </PropertyValues>
+                <SelectedOptionId>1</SelectedOptionId>
+                <AutoCloseMode>None</AutoCloseMode>
+                <EnableStatus>true</EnableStatus>
+                <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+                <RetryCount>-1</RetryCount>
+                <Text>Llamar a una excepción de error en generación de reporte excel</Text>
+                <_activityFullName>BR.Core.Base.ThrowException</_activityFullName>
               </AbstractStep>
             </Childs>
             <Id>a503b1ee-9347-4ba0-becb-dc732a73f319</Id>
-            <Parent z:Ref="i3" />
+            <Parent z:Ref="i5" />
             <PropertyValues>
-              <PropertyValue z:Id="i108">
+              <PropertyValue z:Id="i128">
                 <PropertyName>Message</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>ErrorMensaje</_expression>
@@ -1209,7 +1425,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i109">
+              <PropertyValue z:Id="i129">
                 <PropertyName>StackTrace</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>ErrorStack</_expression>
@@ -1217,7 +1433,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i110">
+              <PropertyValue z:Id="i130">
                 <PropertyName>Source</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>ErrorFuente</_expression>
@@ -1225,7 +1441,7 @@ ORDER BY ""id_producto"" ASC"</_expression>
                 <_value i:nil="true" />
                 <_xpathSettings xmlns:d9p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
               </PropertyValue>
-              <PropertyValue z:Id="i111">
+              <PropertyValue z:Id="i131">
                 <PropertyName>Exception</PropertyName>
                 <_dataType>Expression</_dataType>
                 <_expression>ErrorExcepcion</_expression>
@@ -1242,10 +1458,10 @@ ORDER BY ""id_producto"" ASC"</_expression>
             <Text></Text>
             <_activityFullName>BR.Core.Base.Catch</_activityFullName>
           </AbstractStep>
-          <AbstractStep z:Id="i112" i:type="ExecutedStep">
+          <AbstractStep z:Id="i132" i:type="ExecutedStep">
             <Childs />
             <Id>5faf69bf-546f-4074-a4fa-052c11818e53</Id>
-            <Parent z:Ref="i3" />
+            <Parent z:Ref="i5" />
             <PropertyValues />
             <SelectedOptionId i:nil="true" />
             <AutoCloseMode>None</AutoCloseMode>
@@ -1267,6 +1483,28 @@ ORDER BY ""id_producto"" ASC"</_expression>
         <Text></Text>
         <_activityFullName>BR.Core.Base.TryCatch</_activityFullName>
       </AbstractStep>
+      <AbstractStep z:Id="i133" i:type="ExecutedStep">
+        <Childs />
+        <Id>ebd850d9-0649-41e1-9d16-25ab5b9b00e0</Id>
+        <Parent z:Ref="i2" />
+        <PropertyValues>
+          <PropertyValue z:Id="i134">
+            <PropertyName>Text</PropertyName>
+            <_dataType>Expression</_dataType>
+            <_expression>"Finalización de generación de reporte."</_expression>
+            <_screenShotBase64 i:nil="true" />
+            <_value i:nil="true" />
+            <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
+          </PropertyValue>
+        </PropertyValues>
+        <SelectedOptionId i:nil="true" />
+        <AutoCloseMode>None</AutoCloseMode>
+        <EnableStatus>true</EnableStatus>
+        <ExceptionHandlingMode>Default</ExceptionHandlingMode>
+        <RetryCount>-1</RetryCount>
+        <Text>Escribir el log "Fin de generación de reporte".</Text>
+        <_activityFullName>BR.Core.Base.WriteLog</_activityFullName>
+      </AbstractStep>
     </Childs>
     <Id>f97dbdfb-2390-41a1-9b8f-2b47cc5f5a3c</Id>
     <Parent i:nil="true" />
@@ -1282,14 +1520,14 @@ ORDER BY ""id_producto"" ASC"</_expression>
   <Name>GenerarReporte.pix</Name>
   <Namespaces xmlns:d2p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
   <Params>
-    <Parameter z:Id="i113">
+    <Parameter z:Id="i135">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>ImportarConexionBD</Name>
       <RunnerType>None</RunnerType>
       <TypeString>Activities.DataBaseSQL.Core.DataBaseShareMethodConnection</TypeString>
     </Parameter>
-    <Parameter z:Id="i114">
+    <Parameter z:Id="i136">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
       <Name>Config</Name>

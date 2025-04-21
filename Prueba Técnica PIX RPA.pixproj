@@ -67,6 +67,10 @@
       <IsMain>false</IsMain>
       <Path>Framework\GeneracionReporte\GenerarReporte.pix</Path>
     </ProjectFileItem>
+    <ProjectFileItem z:Id="i18">
+      <IsMain>false</IsMain>
+      <Path>DeserializarJson.pix</Path>
+    </ProjectFileItem>
   </Files>
   <MasterUploadId i:nil="true" />
   <Name>Prueba Técnica PIX RPA</Name>
